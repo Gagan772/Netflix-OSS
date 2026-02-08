@@ -1,0 +1,304 @@
+2026-02-08T22:29:58.026+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] c.n.shop.ShopManagementApplication       : Starting ShopManagementApplication using Java 17.0.16 with PID 11592 (E:\Advanced Projects\Netflix-OSS\shop-management-service\target\classes started by Admin in E:\Advanced Projects\Netflix-OSS\shop-management-service)
+2026-02-08T22:29:58.039+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] c.n.shop.ShopManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-08T22:29:58.300+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-02-08T22:29:58.304+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=shop-management-service, profiles=[default], label=null, version=null, state=null
+2026-02-08T22:30:02.232+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-08T22:30:02.626+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 365 ms. Found 2 JPA repository interfaces.
+2026-02-08T22:30:03.944+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=aad967d1-e6b4-37b2-8875-70050614c6e5
+2026-02-08T22:30:04.930+05:30  WARN [corr=NA] 11592 --- [shop-management-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-08T22:30:04.950+05:30  WARN [corr=NA] 11592 --- [shop-management-service] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-08T22:30:06.514+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-02-08T22:30:06.570+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-08T22:30:06.572+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-02-08T22:30:07.101+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-08T22:30:07.102+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8785 ms
+2026-02-08T22:30:07.735+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-08T22:30:08.664+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:shopdb user=SA
+2026-02-08T22:30:08.670+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-08T22:30:08.704+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:shopdb'
+2026-02-08T22:30:10.088+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-08T22:30:10.331+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.8.Final
+2026-02-08T22:30:10.616+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-08T22:30:11.391+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-08T22:30:13.919+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-08T22:30:14.067+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-08T22:30:16.650+05:30  WARN [corr=NA] 11592 --- [shop-management-service] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-08T22:30:17.559+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'product-stock-service' URL not provided. Will try picking an instance via load-balancing.
+2026-02-08T22:30:21.793+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] efaultSchemaResourceGraphQlSourceBuilder : Loaded 1 resource(s) in the GraphQL schema.
+2026-02-08T22:30:22.527+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.b.a.g.GraphQlAutoConfiguration       : GraphQL schema inspection:
+	Unmapped fields: {}
+	Unmapped registrations: {}
+	Skipped types: []
+2026-02-08T22:30:22.672+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] s.b.a.g.s.GraphQlWebMvcAutoConfiguration : GraphQL endpoint HTTP POST /graphql
+2026-02-08T22:30:26.319+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-08T22:30:26.631+05:30  WARN [corr=NA] 11592 --- [shop-management-service] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-08T22:30:26.754+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-02-08T22:30:27.061+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-08T22:30:27.166+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-08T22:30:27.179+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-08T22:30:27.206+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-08T22:30:27.207+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-08T22:30:27.208+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-08T22:30:27.209+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-08T22:30:27.209+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-08T22:30:27.210+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-08T22:30:27.211+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-08T22:30:28.186+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-08T22:30:28.203+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-08T22:30:28.258+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-08T22:30:28.266+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770570028264 with initial instances count: 1
+2026-02-08T22:30:28.325+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SHOP-MANAGEMENT-SERVICE with eureka with status UP
+2026-02-08T22:30:28.327+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770570028327, current=UP, previous=STARTING]
+2026-02-08T22:30:28.333+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHOP-MANAGEMENT-SERVICE/Gagan261011:shop-management-service:8081: registering service...
+2026-02-08T22:30:28.398+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-02-08T22:30:28.401+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-02-08T22:30:28.449+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SHOP-MANAGEMENT-SERVICE/Gagan261011:shop-management-service:8081 - registration status: 204
+2026-02-08T22:30:28.706+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-08T22:30:28.707+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-08T22:30:28.714+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2026-02-08T22:30:28.936+05:30  INFO [corr=618d2eeb-05d7-4570-ada1-879580d21d7e] 11592 --- [shop-management-service] [http-nio-8081-exec-1] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=GET path=/actuator/health headers={host=localhost:8081, user-agent=Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.7705} body=
+2026-02-08T22:30:28.937+05:30  INFO [corr=618d2eeb-05d7-4570-ada1-879580d21d7e] 11592 --- [shop-management-service] [http-nio-8081-exec-1] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=200 latencyMs=190
+2026-02-08T22:30:28.996+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [main] c.n.shop.ShopManagementApplication       : Started ShopManagementApplication in 35.33 seconds (process running for 36.628)
+2026-02-08T22:31:00.404+05:30  INFO [corr=15086ebd-bcc5-419a-9f2c-ddf0dc13b100] 11592 --- [shop-management-service] [http-nio-8081-exec-2] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=GET path=/actuator/health headers={host=localhost:8081, user-agent=Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.7705} body=
+2026-02-08T22:31:00.408+05:30  INFO [corr=15086ebd-bcc5-419a-9f2c-ddf0dc13b100] 11592 --- [shop-management-service] [http-nio-8081-exec-2] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=200 latencyMs=7
+2026-02-08T22:31:15.257+05:30  INFO [corr=b8cf99ad-b4a4-4126-8433-160a9504b539] 11592 --- [shop-management-service] [http-nio-8081-exec-3] c.n.shop.integration.LoggingFeignClient  : SVC OUT REQ destination=http://product-stock-service/api/stock/reserve method=POST path=http://product-stock-service/api/stock/reserve headers={X-Correlation-Id=b8cf99ad-b4a4-4126-8433-160a9504b539, Content-Length=31, Content-Type=application/json} payload={"sku":"SKU-1001","quantity":2}
+2026-02-08T22:31:16.544+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-3] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=POST path=/api/shops/1/orders headers={content-length=35, x-forwarded-proto=http, postman-token=43a986f4-13a1-4858-8293-ed7ad98c0a1b, x-correlation-id=b8cf99ad-b4a4-4126-8433-160a9504b539, x-forwarded-port=8080, x-forwarded-for=0:0:0:0:0:0:0:1, forwarded=proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:49492", accept=*/*, x-forwarded-host=localhost:8080, x-forwarded-prefix=/shop, host=192.168.1.5:8081, content-type=application/json, cache-control=no-cache, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.51.1} body={
+  "sku": "SKU-1001",
+  "qty": 2
+}
+2026-02-08T22:31:16.544+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-3] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=400 latencyMs=2658
+2026-02-08T22:33:40.631+05:30  INFO [corr=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724] 11592 --- [shop-management-service] [http-nio-8081-exec-5] c.n.s.graphql.GraphqlLoggingInterceptor  : GQL IN operation=null query=query GetOrder($id: ID!) { orderById(id: $id) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } } variables={id=1} headers={content-length=191, x-forwarded-proto=http, postman-token=7e6abdf9-65d9-4098-9463-224b281667f0, x-correlation-id=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724, x-forwarded-port=8080, x-forwarded-for=0:0:0:0:0:0:0:1, forwarded=proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:60363", accept=*/*, x-forwarded-host=localhost:8080, host=192.168.1.5:8081, cache-control=no-cache, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.51.1, Content-Type=application/json;charset=UTF-8}
+2026-02-08T22:33:40.909+05:30 ERROR [corr=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724] 11592 --- [shop-management-service] [http-nio-8081-exec-5] s.g.e.ExceptionResolversExceptionHandler : Unresolved ResourceNotFoundException for executionId 9d663c0b-4703-750d-df58-f4e3467e530f
+
+com.netflixoss.shop.exception.ResourceNotFoundException: Order not found for id: 1
+	at com.netflixoss.shop.service.OrderService.lambda$getOrder$0(OrderService.java:59) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.netflixoss.shop.service.OrderService.getOrder(OrderService.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716) ~[spring-aop-6.1.8.jar:6.1.8]
+	at com.netflixoss.shop.service.OrderService$$SpringCGLIB$$0.getOrder(<generated>) ~[classes/:na]
+	at com.netflixoss.shop.graphql.OrderGraphqlController.orderById(OrderGraphqlController.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.graphql.data.method.InvocableHandlerMethodSupport.doInvoke(InvocableHandlerMethodSupport.java:87) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.validateAndInvoke(DataFetcherHandlerMethod.java:196) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.invoke(DataFetcherHandlerMethod.java:126) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.invoke(DataFetcherHandlerMethod.java:107) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.AnnotatedControllerConfigurer$SchemaMappingDataFetcher.get(AnnotatedControllerConfigurer.java:680) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.execution.ContextDataFetcherDecorator.lambda$get$0(ContextDataFetcherDecorator.java:87) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$1(ContextSnapshot.java:106) ~[context-propagation-1.0.6.jar:1.0.6]
+	at org.springframework.graphql.execution.ContextDataFetcherDecorator.get(ContextDataFetcherDecorator.java:87) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.observation.GraphQlObservationInstrumentation.lambda$instrumentDataFetcher$3(GraphQlObservationInstrumentation.java:145) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at graphql.execution.ExecutionStrategy.invokeDataFetcher(ExecutionStrategy.java:329) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:305) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:243) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.resolveFieldWithInfo(ExecutionStrategy.java:214) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.AsyncExecutionStrategy.execute(AsyncExecutionStrategy.java:63) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.Execution.executeOperation(Execution.java:162) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.Execution.execute(Execution.java:104) ~[graphql-java-21.4.jar:na]
+	at graphql.GraphQL.execute(GraphQL.java:568) ~[graphql-java-21.4.jar:na]
+	at graphql.GraphQL.lambda$parseValidateAndExecute$13(GraphQL.java:487) ~[graphql-java-21.4.jar:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309) ~[na:na]
+	at graphql.GraphQL.parseValidateAndExecute(GraphQL.java:482) ~[graphql-java-21.4.jar:na]
+	at graphql.GraphQL.lambda$executeAsync$9(GraphQL.java:440) ~[graphql-java-21.4.jar:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309) ~[na:na]
+	at graphql.GraphQL.executeAsync(GraphQL.java:428) ~[graphql-java-21.4.jar:na]
+	at org.springframework.graphql.execution.DefaultExecutionGraphQlService.lambda$execute$2(DefaultExecutionGraphQlService.java:99) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:47) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4634) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.toFuture(Mono.java:5146) ~[reactor-core-3.6.6.jar:3.6.6]
+	at org.springframework.graphql.server.webmvc.GraphQlHttpHandler.handleRequest(GraphQlHttpHandler.java:113) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.web.servlet.function.support.HandlerFunctionAdapter.handle(HandlerFunctionAdapter.java:108) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at com.netflixoss.shop.config.CorrelationLoggingFilter.doFilterInternal(CorrelationLoggingFilter.java:49) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-08T22:33:40.950+05:30  INFO [corr=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724] 11592 --- [shop-management-service] [http-nio-8081-exec-5] c.n.s.graphql.GraphqlLoggingInterceptor  : GQL OUT errors=1 dataPresent=false
+2026-02-08T22:33:40.982+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-5] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=POST path=/graphql headers={content-length=191, x-forwarded-proto=http, postman-token=7e6abdf9-65d9-4098-9463-224b281667f0, x-correlation-id=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724, x-forwarded-port=8080, x-forwarded-for=0:0:0:0:0:0:0:1, forwarded=proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:60363", accept=*/*, x-forwarded-host=localhost:8080, host=192.168.1.5:8081, content-type=application/json, cache-control=no-cache, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.51.1} body={
+  "query": "query GetOrder($id: ID!) { orderById(id: $id) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } }",
+  "variables": {
+    "id": "1"
+  }
+}
+2026-02-08T22:33:40.982+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-5] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=200 latencyMs=381
+2026-02-08T22:33:56.595+05:30  INFO [corr=e8a53188-5095-43c6-aba1-e7ed213a7f73] 11592 --- [shop-management-service] [http-nio-8081-exec-6] c.n.s.graphql.GraphqlLoggingInterceptor  : GQL IN operation=null query=mutation CreateOrder($shopId: ID!, $sku: String!, $qty: Int!) { createOrder(shopId: $shopId, sku: $sku, qty: $qty) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } } variables={shopId=1, sku=SKU-1002, qty=1} headers={content-length=301, x-forwarded-proto=http, postman-token=8e0844c5-7cda-44c5-b918-02a70d1e4fe0, x-correlation-id=e8a53188-5095-43c6-aba1-e7ed213a7f73, x-forwarded-port=8080, x-forwarded-for=0:0:0:0:0:0:0:1, forwarded=proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:60363", accept=*/*, x-forwarded-host=localhost:8080, host=192.168.1.5:8081, cache-control=no-cache, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.51.1, Content-Type=application/json;charset=UTF-8}
+2026-02-08T22:33:56.625+05:30  INFO [corr=e8a53188-5095-43c6-aba1-e7ed213a7f73] 11592 --- [shop-management-service] [http-nio-8081-exec-6] c.n.shop.integration.LoggingFeignClient  : SVC OUT REQ destination=http://product-stock-service/api/stock/reserve method=POST path=http://product-stock-service/api/stock/reserve headers={X-Correlation-Id=e8a53188-5095-43c6-aba1-e7ed213a7f73, Content-Length=31, Content-Type=application/json} payload={"sku":"SKU-1002","quantity":1}
+2026-02-08T22:33:57.886+05:30 ERROR [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-6] s.g.e.ExceptionResolversExceptionHandler : Unresolved BusinessException for executionId f9016c56-0d58-d605-1ce2-fb22532f2d2b
+
+com.netflixoss.shop.exception.BusinessException: Order rejected, stock reservation failed: Stock service fallback: product-stock-service executing POST http://product-stock-service/api/stock/reserve
+	at com.netflixoss.shop.service.OrderService.createOrder(OrderService.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720) ~[spring-aop-6.1.8.jar:6.1.8]
+	at com.netflixoss.shop.service.OrderService$$SpringCGLIB$$0.createOrder(<generated>) ~[classes/:na]
+	at com.netflixoss.shop.graphql.OrderGraphqlController.createOrder(OrderGraphqlController.java:31) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.graphql.data.method.InvocableHandlerMethodSupport.doInvoke(InvocableHandlerMethodSupport.java:87) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.validateAndInvoke(DataFetcherHandlerMethod.java:196) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.invoke(DataFetcherHandlerMethod.java:126) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.DataFetcherHandlerMethod.invoke(DataFetcherHandlerMethod.java:107) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.data.method.annotation.support.AnnotatedControllerConfigurer$SchemaMappingDataFetcher.get(AnnotatedControllerConfigurer.java:680) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.execution.ContextDataFetcherDecorator.lambda$get$0(ContextDataFetcherDecorator.java:87) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at io.micrometer.context.ContextSnapshot.lambda$wrap$1(ContextSnapshot.java:106) ~[context-propagation-1.0.6.jar:1.0.6]
+	at org.springframework.graphql.execution.ContextDataFetcherDecorator.get(ContextDataFetcherDecorator.java:87) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.graphql.observation.GraphQlObservationInstrumentation.lambda$instrumentDataFetcher$3(GraphQlObservationInstrumentation.java:145) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at graphql.execution.instrumentation.dataloader.DataLoaderDispatcherInstrumentation.lambda$instrumentDataFetcher$0(DataLoaderDispatcherInstrumentation.java:90) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.invokeDataFetcher(ExecutionStrategy.java:329) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:305) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.fetchField(ExecutionStrategy.java:243) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.resolveFieldWithInfo(ExecutionStrategy.java:214) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.ExecutionStrategy.resolveField(ExecutionStrategy.java:186) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.AsyncSerialExecutionStrategy.lambda$execute$1(AsyncSerialExecutionStrategy.java:56) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.Async.eachSequentiallyImpl(Async.java:162) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.Async.eachSequentially(Async.java:151) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.AsyncSerialExecutionStrategy.execute(AsyncSerialExecutionStrategy.java:51) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.Execution.executeOperation(Execution.java:162) ~[graphql-java-21.4.jar:na]
+	at graphql.execution.Execution.execute(Execution.java:104) ~[graphql-java-21.4.jar:na]
+	at graphql.GraphQL.execute(GraphQL.java:568) ~[graphql-java-21.4.jar:na]
+	at graphql.GraphQL.lambda$parseValidateAndExecute$13(GraphQL.java:487) ~[graphql-java-21.4.jar:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309) ~[na:na]
+	at graphql.GraphQL.parseValidateAndExecute(GraphQL.java:482) ~[graphql-java-21.4.jar:na]
+	at graphql.GraphQL.lambda$executeAsync$9(GraphQL.java:440) ~[graphql-java-21.4.jar:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniComposeStage(CompletableFuture.java:1187) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.thenCompose(CompletableFuture.java:2309) ~[na:na]
+	at graphql.GraphQL.executeAsync(GraphQL.java:428) ~[graphql-java-21.4.jar:na]
+	at org.springframework.graphql.execution.DefaultExecutionGraphQlService.lambda$execute$2(DefaultExecutionGraphQlService.java:99) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:47) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4568) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4634) ~[reactor-core-3.6.6.jar:3.6.6]
+	at reactor.core.publisher.Mono.toFuture(Mono.java:5146) ~[reactor-core-3.6.6.jar:3.6.6]
+	at org.springframework.graphql.server.webmvc.GraphQlHttpHandler.handleRequest(GraphQlHttpHandler.java:113) ~[spring-graphql-1.2.6.jar:1.2.6]
+	at org.springframework.web.servlet.function.support.HandlerFunctionAdapter.handle(HandlerFunctionAdapter.java:108) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at com.netflixoss.shop.config.CorrelationLoggingFilter.doFilterInternal(CorrelationLoggingFilter.java:49) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2026-02-08T22:33:57.892+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-6] c.n.s.graphql.GraphqlLoggingInterceptor  : GQL OUT errors=1 dataPresent=false
+2026-02-08T22:33:57.893+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-6] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=POST path=/graphql headers={content-length=301, x-forwarded-proto=http, postman-token=8e0844c5-7cda-44c5-b918-02a70d1e4fe0, x-correlation-id=e8a53188-5095-43c6-aba1-e7ed213a7f73, x-forwarded-port=8080, x-forwarded-for=0:0:0:0:0:0:0:1, forwarded=proto=http;host="localhost:8080";for="[0:0:0:0:0:0:0:1]:60363", accept=*/*, x-forwarded-host=localhost:8080, host=192.168.1.5:8081, content-type=application/json, cache-control=no-cache, accept-encoding=gzip, deflate, br, user-agent=PostmanRuntime/7.51.1} body={
+  "query": "mutation CreateOrder($shopId: ID!, $sku: String!, $qty: Int!) { createOrder(shopId: $shopId, sku: $sku, qty: $qty) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } }",
+  "variables": {
+    "shopId": "1",
+    "sku": "SKU-1002",
+    "qty": 1
+  }
+}
+2026-02-08T22:33:57.893+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [http-nio-8081-exec-6] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=200 latencyMs=1300
+2026-02-08T22:34:22.861+05:30  INFO [corr=2939f289-1e80-4507-8e92-58887df88e1d] 11592 --- [shop-management-service] [http-nio-8081-exec-7] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=GET path=/actuator/logfile headers={sec-fetch-mode=navigate, sec-fetch-site=none, accept-language=en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,kn;q=0.6, cookie=***, sec-fetch-user=?1, accept=text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7, sec-ch-ua="Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", host=localhost:8081, upgrade-insecure-requests=1, connection=keep-alive, accept-encoding=gzip, deflate, br, zstd, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36, sec-fetch-dest=document} body=
+2026-02-08T22:34:22.862+05:30  INFO [corr=2939f289-1e80-4507-8e92-58887df88e1d] 11592 --- [shop-management-service] [http-nio-8081-exec-7] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=200 latencyMs=15
+2026-02-08T22:34:23.023+05:30  INFO [corr=99cd115d-e6b0-4a1e-b35d-60f2a56f4294] 11592 --- [shop-management-service] [http-nio-8081-exec-9] c.n.s.config.CorrelationLoggingFilter    : SVC IN method=GET path=/favicon.ico headers={sec-fetch-mode=no-cors, referer=http://localhost:8081/actuator/logfile, sec-fetch-site=same-origin, accept-language=en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,kn;q=0.6, cookie=***, accept=image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8, sec-ch-ua="Not(A:Brand";v="8", "Chromium";v="144", "Google Chrome";v="144", sec-ch-ua-mobile=?0, sec-ch-ua-platform="Windows", host=localhost:8081, connection=keep-alive, accept-encoding=gzip, deflate, br, zstd, user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36, sec-fetch-dest=image} body=
+2026-02-08T22:34:23.023+05:30  INFO [corr=99cd115d-e6b0-4a1e-b35d-60f2a56f4294] 11592 --- [shop-management-service] [http-nio-8081-exec-9] c.n.s.config.CorrelationLoggingFilter    : SVC OUT status=500 latencyMs=16
+2026-02-08T22:35:27.225+05:30  INFO [corr=NA] 11592 --- [shop-management-service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: product-stock-service
+  config:
+    import: optional:configserver:http://localhost:8888
+
+logging:
+  file:
+    name: logs/product-stock-service.log
+
+management:
+  endpoint:
+    logfile:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,logfile

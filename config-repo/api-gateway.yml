@@ -1,0 +1,36 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+      routes:
+        - id: shop-rest
+          uri: lb://SHOP-MANAGEMENT-SERVICE
+          predicates:
+            - Path=/shop/**
+          filters:
+            - StripPrefix=1
+        - id: stock-rest
+          uri: lb://PRODUCT-STOCK-SERVICE
+          predicates:
+            - Path=/stock/**
+          filters:
+            - StripPrefix=1
+        - id: stock-soap
+          uri: lb://PRODUCT-STOCK-SERVICE
+          predicates:
+            - Path=/soap/**
+          filters:
+            - RewritePath=/soap/(?<segment>.*), /$\{segment}
+        - id: shop-graphql
+          uri: lb://SHOP-MANAGEMENT-SERVICE
+          predicates:
+            - Path=/graphql,/graphql/**
+          filters:
+            - RewritePath=/graphql/?(?<segment>.*), /graphql

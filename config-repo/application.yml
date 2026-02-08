@@ -1,0 +1,23 @@
+logging:
+  pattern:
+    level: "%5p [corr=%X{correlationId:-NA}]"
+  file:
+    name: logs/${spring.application.name}.log
+
+management:
+  endpoint:
+    logfile:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info,logfile
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true

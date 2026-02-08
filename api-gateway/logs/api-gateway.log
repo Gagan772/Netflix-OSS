@@ -1,0 +1,85 @@
+2026-02-08T22:30:48.038+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] c.n.gateway.ApiGatewayApplication        : Starting ApiGatewayApplication using Java 17.0.16 with PID 10220 (E:\Advanced Projects\Netflix-OSS\api-gateway\target\classes started by Admin in E:\Advanced Projects\Netflix-OSS\api-gateway)
+2026-02-08T22:30:48.044+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] c.n.gateway.ApiGatewayApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-02-08T22:30:48.184+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-02-08T22:30:48.186+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=api-gateway, profiles=[default], label=null, version=null, state=null
+2026-02-08T22:30:52.655+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=601b8f5f-f8e1-3436-9c55-d68022cdee1f
+2026-02-08T22:30:52.781+05:30  WARN [corr=NA] 10220 --- [api-gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-08T22:30:52.789+05:30  WARN [corr=NA] 10220 --- [api-gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-08T22:30:52.793+05:30  WARN [corr=NA] 10220 --- [api-gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-08T22:30:52.796+05:30  WARN [corr=NA] 10220 --- [api-gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-08T22:30:52.798+05:30  WARN [corr=NA] 10220 --- [api-gateway] [main] trationDelegate$BeanPostProcessorChecker : Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [loadBalancerWebClientBuilderBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-08T22:30:56.005+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-02-08T22:30:56.006+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-02-08T22:30:56.007+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-02-08T22:30:56.008+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-02-08T22:30:56.009+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-02-08T22:30:56.010+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-02-08T22:30:56.011+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-02-08T22:30:56.012+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-02-08T22:30:56.012+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-02-08T22:30:56.012+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-02-08T22:30:56.013+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-02-08T22:30:56.013+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-02-08T22:30:56.014+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-02-08T22:30:56.014+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-02-08T22:30:57.633+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-02-08T22:30:58.122+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-02-08T22:30:58.204+05:30  WARN [corr=NA] 10220 --- [api-gateway] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-08T22:30:58.339+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-08T22:30:58.388+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-08T22:30:58.398+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-02-08T22:30:58.422+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-02-08T22:30:58.423+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-02-08T22:30:58.424+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-02-08T22:30:58.426+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-02-08T22:30:58.426+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-02-08T22:30:58.427+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-02-08T22:30:58.428+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-02-08T22:30:59.012+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-02-08T22:30:59.018+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-02-08T22:30:59.024+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-02-08T22:30:59.028+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770570059027 with initial instances count: 2
+2026-02-08T22:30:59.038+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2026-02-08T22:30:59.041+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1770570059041, current=UP, previous=STARTING]
+2026-02-08T22:30:59.047+05:30  INFO [corr=NA] 10220 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/Gagan261011:api-gateway:8080: registering service...
+2026-02-08T22:30:59.188+05:30  INFO [corr=NA] 10220 --- [api-gateway] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/Gagan261011:api-gateway:8080 - registration status: 204
+2026-02-08T22:30:59.778+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2026-02-08T22:30:59.781+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-02-08T22:31:00.426+05:30  INFO [corr=NA] 10220 --- [api-gateway] [main] c.n.gateway.ApiGatewayApplication        : Started ApiGatewayApplication in 15.912 seconds (process running for 17.179)
+2026-02-08T22:31:13.274+05:30  INFO [corr=b8cf99ad-b4a4-4126-8433-160a9504b539] 10220 --- [api-gateway] [reactor-http-nio-4] c.n.g.f.CorrelationLoggingGlobalFilter   : GW IN method=POST path=/shop/api/shops/1/orders headers={Accept=*/*, Cache-Control=no-cache, X-Correlation-Id=b8cf99ad-b4a4-4126-8433-160a9504b539, User-Agent=PostmanRuntime/7.51.1, Connection=keep-alive, Postman-Token=43a986f4-13a1-4858-8293-ed7ad98c0a1b, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=35, Content-Type=application/json} body={
+  "sku": "SKU-1001",
+  "qty": 2
+}
+2026-02-08T22:31:16.575+05:30  INFO [corr=b8cf99ad-b4a4-4126-8433-160a9504b539] 10220 --- [api-gateway] [reactor-http-nio-4] c.n.g.f.CorrelationLoggingGlobalFilter   : GW OUT status=400 latencyMs=3346
+2026-02-08T22:31:41.895+05:30  INFO [corr=b6f0cc9b-bd26-492b-a3c6-b470c0f09821] 10220 --- [api-gateway] [reactor-http-nio-4] c.n.g.f.CorrelationLoggingGlobalFilter   : GW IN method=POST path=/stock/api/stock/reserve headers={Accept=*/*, Cache-Control=no-cache, X-Correlation-Id=b6f0cc9b-bd26-492b-a3c6-b470c0f09821, User-Agent=PostmanRuntime/7.51.1, Connection=keep-alive, Postman-Token=47c8aae8-c175-4344-8aff-0adfb1944c38, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=40, Content-Type=application/json} body={
+  "sku": "SKU-1002",
+  "quantity": 1
+}
+2026-02-08T22:31:42.640+05:30  INFO [corr=b6f0cc9b-bd26-492b-a3c6-b470c0f09821] 10220 --- [api-gateway] [reactor-http-nio-4] c.n.g.f.CorrelationLoggingGlobalFilter   : GW OUT status=200 latencyMs=746
+2026-02-08T22:32:00.029+05:30  INFO [corr=25810ace-d2a1-4dab-88fb-19865071d4ac] 10220 --- [api-gateway] [reactor-http-nio-4] c.n.g.f.CorrelationLoggingGlobalFilter   : GW IN method=POST path=/soap/ws headers={SOAPAction=restockProduct, Accept=*/*, Cache-Control=no-cache, X-Correlation-Id=25810ace-d2a1-4dab-88fb-19865071d4ac, User-Agent=PostmanRuntime/7.51.1, Connection=keep-alive, Postman-Token=c1dea245-92f2-4e19-8633-7559a9e474c1, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=316, Content-Type=text/xml;charset=UTF-8} body=<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:st="http://netflixoss.com/stock/soap">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <st:RestockProductRequest>
+      <st:sku>SKU-1001</st:sku>
+      <st:qty>10</st:qty>
+    </st:RestockProductRequest>
+  </soapenv:Body>
+</soapenv:Envelope>
+2026-02-08T22:32:01.427+05:30  INFO [corr=25810ace-d2a1-4dab-88fb-19865071d4ac] 10220 --- [api-gateway] [reactor-http-nio-4] c.n.g.f.CorrelationLoggingGlobalFilter   : GW OUT status=500 latencyMs=1396
+2026-02-08T22:33:40.593+05:30  INFO [corr=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724] 10220 --- [api-gateway] [reactor-http-nio-6] c.n.g.f.CorrelationLoggingGlobalFilter   : GW IN method=POST path=/graphql headers={Accept=*/*, Cache-Control=no-cache, X-Correlation-Id=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724, User-Agent=PostmanRuntime/7.51.1, Connection=keep-alive, Postman-Token=7e6abdf9-65d9-4098-9463-224b281667f0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=191, Content-Type=application/json} body={
+  "query": "query GetOrder($id: ID!) { orderById(id: $id) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } }",
+  "variables": {
+    "id": "1"
+  }
+}
+2026-02-08T22:33:40.995+05:30  INFO [corr=9f6f326f-4ce8-44d2-b3b0-3a6ce5f69724] 10220 --- [api-gateway] [reactor-http-nio-6] c.n.g.f.CorrelationLoggingGlobalFilter   : GW OUT status=200 latencyMs=401
+2026-02-08T22:33:56.587+05:30  INFO [corr=e8a53188-5095-43c6-aba1-e7ed213a7f73] 10220 --- [api-gateway] [reactor-http-nio-6] c.n.g.f.CorrelationLoggingGlobalFilter   : GW IN method=POST path=/graphql headers={Accept=*/*, Cache-Control=no-cache, X-Correlation-Id=e8a53188-5095-43c6-aba1-e7ed213a7f73, User-Agent=PostmanRuntime/7.51.1, Connection=keep-alive, Postman-Token=8e0844c5-7cda-44c5-b918-02a70d1e4fe0, Host=localhost:8080, Accept-Encoding=gzip, deflate, br, Content-Length=301, Content-Type=application/json} body={
+  "query": "mutation CreateOrder($shopId: ID!, $sku: String!, $qty: Int!) { createOrder(shopId: $shopId, sku: $sku, qty: $qty) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } }",
+  "variables": {
+    "shopId": "1",
+    "sku": "SKU-1002",
+    "qty": 1
+  }
+}
+2026-02-08T22:33:57.900+05:30  INFO [corr=e8a53188-5095-43c6-aba1-e7ed213a7f73] 10220 --- [api-gateway] [reactor-http-nio-6] c.n.g.f.CorrelationLoggingGlobalFilter   : GW OUT status=200 latencyMs=1314
+2026-02-08T22:35:58.443+05:30  INFO [corr=NA] 10220 --- [api-gateway] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

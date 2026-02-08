@@ -1,0 +1,56 @@
+2026-02-08T22:28:34.386+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.EurekaServerApplication       : Starting EurekaServerApplication using Java 17.0.16 with PID 21996 (E:\Advanced Projects\Netflix-OSS\eureka-server\target\classes started by Admin in E:\Advanced Projects\Netflix-OSS\eureka-server)
+2026-02-08T22:28:34.400+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.EurekaServerApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-08T22:28:37.946+05:30  INFO 21996 --- [eureka-server] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abb7adab-21c8-3b20-b2fc-662da0635850
+2026-02-08T22:28:38.057+05:30  WARN 21996 --- [eureka-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-02-08T22:28:38.068+05:30  WARN 21996 --- [eureka-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-02-08T22:28:38.909+05:30  INFO 21996 --- [eureka-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8761 (http)
+2026-02-08T22:28:39.015+05:30  INFO 21996 --- [eureka-server] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-08T22:28:39.017+05:30  INFO 21996 --- [eureka-server] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-02-08T22:28:39.269+05:30  INFO 21996 --- [eureka-server] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-08T22:28:39.270+05:30  INFO 21996 --- [eureka-server] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4641 ms
+2026-02-08T22:28:42.463+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-02-08T22:28:42.464+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-02-08T22:28:43.434+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-02-08T22:28:43.434+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-02-08T22:28:46.976+05:30  WARN 21996 --- [eureka-server] [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-02-08T22:28:47.109+05:30  INFO 21996 --- [eureka-server] [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-02-08T22:28:47.178+05:30  INFO 21996 --- [eureka-server] [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-02-08T22:28:47.180+05:30  INFO 21996 --- [eureka-server] [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-02-08T22:28:47.186+05:30  INFO 21996 --- [eureka-server] [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1770569927184 with initial instances count: 0
+2026-02-08T22:28:47.318+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-02-08T22:28:47.402+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-02-08T22:28:47.924+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-02-08T22:28:47.925+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-02-08T22:28:47.926+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-02-08T22:28:47.926+05:30  INFO 21996 --- [eureka-server] [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-02-08T22:28:47.989+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-02-08T22:28:48.007+05:30  INFO 21996 --- [eureka-server] [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-02-08T22:28:48.008+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-02-08T22:28:48.023+05:30  INFO 21996 --- [eureka-server] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2026-02-08T22:28:48.136+05:30  INFO 21996 --- [eureka-server] [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application EUREKA-SERVER with eureka with status UP
+2026-02-08T22:28:48.171+05:30  INFO 21996 --- [eureka-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-02-08T22:28:48.173+05:30  INFO 21996 --- [eureka-server] [Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-02-08T22:28:48.175+05:30  INFO 21996 --- [eureka-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-02-08T22:28:48.177+05:30  INFO 21996 --- [eureka-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-02-08T22:28:48.178+05:30  INFO 21996 --- [eureka-server] [Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-02-08T22:28:48.184+05:30  INFO 21996 --- [eureka-server] [Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-02-08T22:28:48.210+05:30  INFO 21996 --- [eureka-server] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8761 (http) with context path ''
+2026-02-08T22:28:48.212+05:30  INFO 21996 --- [eureka-server] [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-02-08T22:28:48.749+05:30  INFO 21996 --- [eureka-server] [main] c.n.eureka.EurekaServerApplication       : Started EurekaServerApplication in 16.563 seconds (process running for 17.686)
+2026-02-08T22:28:50.150+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-08T22:28:50.152+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-08T22:28:50.155+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-02-08T22:29:37.436+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-STOCK-SERVICE/Gagan261011:product-stock-service:8082 with status UP (replication=false)
+2026-02-08T22:29:38.423+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-STOCK-SERVICE/Gagan261011:product-stock-service:8082 with status UP (replication=true)
+2026-02-08T22:29:48.191+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-02-08T22:30:28.444+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SHOP-MANAGEMENT-SERVICE/Gagan261011:shop-management-service:8081 with status UP (replication=false)
+2026-02-08T22:30:28.982+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SHOP-MANAGEMENT-SERVICE/Gagan261011:shop-management-service:8081 with status UP (replication=true)
+2026-02-08T22:30:48.205+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 14ms
+2026-02-08T22:30:59.184+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/Gagan261011:api-gateway:8080 with status UP (replication=false)
+2026-02-08T22:30:59.700+05:30  INFO 21996 --- [eureka-server] [http-nio-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/Gagan261011:api-gateway:8080 with status UP (replication=true)
+2026-02-08T22:31:48.213+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-02-08T22:32:48.230+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 16ms
+2026-02-08T22:33:48.243+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2026-02-08T22:34:48.245+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-02-08T22:35:48.254+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-02-08T22:36:48.259+05:30  INFO 21996 --- [eureka-server] [Eureka-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms

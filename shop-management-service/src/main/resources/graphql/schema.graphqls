@@ -1,0 +1,24 @@
+type Query {
+  orderById(id: ID!): OrderPayload!
+}
+
+type Mutation {
+  createOrder(shopId: ID!, sku: String!, qty: Int!): OrderPayload!
+}
+
+type OrderPayload {
+  success: Boolean!
+  data: OrderData
+  error: String
+  correlationId: String
+  timestamp: String
+}
+
+type OrderData {
+  orderId: ID
+  shopId: ID
+  sku: String
+  qty: Int
+  status: String
+  createdAt: String
+}

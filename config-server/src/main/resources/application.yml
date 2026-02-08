@@ -1,0 +1,26 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:../config-repo,file:./config-repo
+
+logging:
+  file:
+    name: logs/config-server.log
+
+management:
+  endpoint:
+    logfile:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,logfile

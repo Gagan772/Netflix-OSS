@@ -1,0 +1,318 @@
+{
+  "info": {
+    "_postman_id": "a82f2d39-95dd-4e09-b4db-3d9b9b56d556",
+    "name": "Netflix OSS Microservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "REST + SOAP + GraphQL requests through API Gateway"
+  },
+  "item": [
+    {
+      "name": "REST",
+      "item": [
+        {
+          "name": "1. Create Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/shop/api/shops/1/orders",
+              "host": ["{{baseUrl}}"],
+              "path": ["shop", "api", "shops", "1", "orders"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sku\": \"SKU-1001\",\n  \"qty\": 2\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 201', function () { pm.response.to.have.status(201); });",
+                  "const json = pm.response.json();",
+                  "if (json && json.data && json.data.orderId) { pm.environment.set('orderId', json.data.orderId); }"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "2. Get Order",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/shop/api/orders/{{orderId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["shop", "api", "orders", "{{orderId}}"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "3. List Orders by Shop",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/shop/api/shops/1/orders",
+              "host": ["{{baseUrl}}"],
+              "path": ["shop", "api", "shops", "1", "orders"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "4. List Products",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/stock/api/products",
+              "host": ["{{baseUrl}}"],
+              "path": ["stock", "api", "products"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "5. Get Product by SKU",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/stock/api/products/SKU-1001",
+              "host": ["{{baseUrl}}"],
+              "path": ["stock", "api", "products", "SKU-1001"]
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "6. Reserve Stock (Internal Endpoint)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/stock/api/stock/reserve",
+              "host": ["{{baseUrl}}"],
+              "path": ["stock", "api", "stock", "reserve"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"sku\": \"SKU-1002\",\n  \"quantity\": 1\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SOAP",
+      "item": [
+        {
+          "name": "7. getStockLevel(sku)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "text/xml;charset=UTF-8" },
+              { "key": "SOAPAction", "value": "getStockLevel" },
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/soap/ws",
+              "host": ["{{baseUrl}}"],
+              "path": ["soap", "ws"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:st=\"http://netflixoss.com/stock/soap\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <st:GetStockLevelRequest>\n      <st:sku>SKU-1001</st:sku>\n    </st:GetStockLevelRequest>\n  </soapenv:Body>\n</soapenv:Envelope>"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "8. restockProduct(sku, qty)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "text/xml;charset=UTF-8" },
+              { "key": "SOAPAction", "value": "restockProduct" },
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/soap/ws",
+              "host": ["{{baseUrl}}"],
+              "path": ["soap", "ws"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:st=\"http://netflixoss.com/stock/soap\">\n  <soapenv:Header/>\n  <soapenv:Body>\n    <st:RestockProductRequest>\n      <st:sku>SKU-1001</st:sku>\n      <st:qty>10</st:qty>\n    </st:RestockProductRequest>\n  </soapenv:Body>\n</soapenv:Envelope>"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GraphQL",
+      "item": [
+        {
+          "name": "9. Query orderById(id)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/graphql",
+              "host": ["{{baseUrl}}"],
+              "path": ["graphql"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"query GetOrder($id: ID!) { orderById(id: $id) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } }\",\n  \"variables\": {\n    \"id\": \"{{orderId}}\"\n  }\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "10. Mutation createOrder(shopId, sku, qty)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "X-Correlation-Id", "value": "{{correlationId}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/graphql",
+              "host": ["{{baseUrl}}"],
+              "path": ["graphql"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"mutation CreateOrder($shopId: ID!, $sku: String!, $qty: Int!) { createOrder(shopId: $shopId, sku: $sku, qty: $qty) { success error correlationId timestamp data { orderId shopId sku qty status createdAt } } }\",\n  \"variables\": {\n    \"shopId\": \"1\",\n    \"sku\": \"SKU-1002\",\n    \"qty\": 1\n  }\n}"
+            }
+          },
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('status is 200', function () { pm.response.to.have.status(200); });",
+                  "const json = pm.response.json();",
+                  "if (json && json.data && json.data.createOrder && json.data.createOrder.data && json.data.createOrder.data.orderId) {",
+                  "  pm.environment.set('orderId', json.data.createOrder.data.orderId);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" },
+    { "key": "correlationId", "value": "" },
+    { "key": "orderId", "value": "1" }
+  ]
+}
